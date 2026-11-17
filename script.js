@@ -6,26 +6,16 @@
       const open = toggle.getAttribute('aria-expanded') !== 'true';
       toggle.setAttribute('aria-expanded', String(open));
       nav.classList.toggle('is-open', open);
-      toggle.querySelector('span').textContent = open ? '−' : '＋';
+      const label = toggle.querySelector('span');
+      if (label) label.textContent = open ? '−' : '＋';
     });
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
       toggle.setAttribute('aria-expanded', 'false');
       nav.classList.remove('is-open');
-      toggle.querySelector('span').textContent = '＋';
+      const label = toggle.querySelector('span');
+      if (label) label.textContent = '＋';
     }));
   }
   const year = document.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();
-  const revealItems = document.querySelectorAll('.service-item, .process-grid article, .work-card');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealItems.forEach(item => { item.classList.add('reveal'); observer.observe(item); });
-  }
 })();
