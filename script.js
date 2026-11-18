@@ -1,1 +1,29 @@
-(()=>{const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();const items=document.querySelectorAll('.intro,.principles article,.section-head,.project,.service-list a,.approach-grid,.contact-grid');if('IntersectionObserver'in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){items.forEach(x=>x.classList.add('reveal'));const io=new IntersectionObserver((entries,obs)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});items.forEach(x=>io.observe(x))}})();
+(() => {
+  const nav = document.querySelector('.site-header nav');
+  const toggle = document.querySelector('.menu-toggle');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+    items.forEach(item => observer.observe(item));
+  } else {
+    items.forEach(item => item.classList.add('is-visible'));
+  }
+})();

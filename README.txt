@@ -1,15 +1,12 @@
-VYRO STUDIO — ORIGINAL SANTAL-INSPIRED REDESIGN
+VYRO PORTFOLIO — VERSION 1
+Files: index.html, styles.css, script.js, offgrid.html, offgrid.css
 
-This uses broad structural inspiration: editorial hierarchy, spacious layout, studio
-philosophy, featured work, capability list, process and strong contact ending.
-It does NOT copy SANTAL's branding, wording, images, architecture content or identity.
+For GitHub Pages:
+1. Open your existing vyro-studio repository.
+2. Upload/replace these five files at the repository root.
+3. Keep any existing assets folder; this version does not require it.
+4. Commit the changes.
+5. Visit https://vyrobusinessinquires-coder.github.io/vyro-studio/
 
-Install:
-1. Extract this ZIP.
-2. Open the inner vyro-studio-santal-inspired folder.
-3. Upload/replace these five website files at the ROOT of your existing vyro-studio GitHub repository.
-4. Commit changes, then hard-refresh the site with Ctrl+Shift+R.
-
-The hero 3D-style sculpture is made with CSS rather than a heavy 3D library.
-OFFGRID is labelled as a fictional concept. Character Lab and Soft Geometry are
-labelled as visual experiments, not commissioned client work.
+The portfolio labels OFFGRID as a fictional concept and Character Lab / Soft Geometry as visual experiments.
+The contact link points to the existing VYRO Facebook Page.
