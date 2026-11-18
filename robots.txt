@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vyrobusinessinquires-coder.github.io/vyro-studio/sitemap.xml
