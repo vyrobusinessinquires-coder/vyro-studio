@@ -35,3 +35,16 @@ TEST CHECKLIST
 [ ] Facebook CTA opens in a new tab
 [ ] GitHub Pages 404 behavior works
 [ ] Confirm og:image asset exists before social previews; og-cover.jpg is included for social previews.
+
+
+NEW IN THIS LAUNCH KIT
+- character-lab.html — dedicated visual-experiment case study
+- soft-geometry.html — dedicated 3D / form visual-experiment case study
+- project-inquiry.html — local-only project brief builder; copies answers for manual Messenger paste and does not submit/store data
+- VYRO-CLIENT-KIT/ — service scope guide, inquiry replies, proposal template, delivery checklist, adult-review guardrails and lead tracker
+
+PORTFOLIO HONESTY
+Character Lab and Soft Geometry are explicitly labelled visual experiments. Their abstract visuals are direction studies/placeholders, not finished commissioned work. OFFGRID remains a fictional concept. Replace any placeholder visual with original finished artwork before describing it as completed output.
+
+PAYMENTS AND LEGAL
+No checkout or payment processor is configured. This site does not collect payments. A parent/legal guardian must supervise payment-provider eligibility and account ownership, and review contracts, refund/cancellation terms, privacy and IP clauses before accepting client work. The included documents are operational templates, not legal advice or signed contracts.
